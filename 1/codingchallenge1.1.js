@@ -60,7 +60,7 @@ function cumpleMin(scores){
 }
 
 function winner(score1,score2){
-    console.log(promedio(score1), promedio(score2));
+    //console.log(promedio(score1), promedio(score2));
     if (cumpleMin(score1)) {
         if (promedio(score1) > promedio(score2)){
             console.log('Gana equipo 1');
