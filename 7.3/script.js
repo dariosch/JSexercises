@@ -60,7 +60,7 @@ btnHold.addEventListener("click", function () {
   if (playing) {
     scores[activePlayer] += scoreActual;
     // si tiene 100 puntos o mas gana
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 50) {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add("player--winner");
