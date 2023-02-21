@@ -21,4 +21,38 @@ const checkDogs = function (array1, array2) {
   });
 };
 
-checkDogs(dogsJulia2, dogsKate2);
+//checkDogs(dogsJulia2, dogsKate2);
+
+// Challenge 2 >> Calculate dog ages to human ages and average age of set of dogs
+
+const humanAge = function (array1) {
+  return array1.map((dogAge) => (dogAge <= 2 ? dogAge * 2 : 16 + dogAge * 4));
+};
+
+console.log(humanAge(dogsJulia));
+
+const filterAge = (array1) => array1.filter((edad) => edad >= 18);
+
+console.log(filterAge(humanAge(dogsJulia)));
+
+const averageAge = function (array1) {
+  const total = array1.reduce(function (acc, act) {
+    return acc + act;
+  }, 0);
+  return total / array1.length;
+};
+
+console.log(averageAge(filterAge(humanAge(dogsJulia))));
+
+// Sin tanta funcion, con los metodos, resolviendo asi el Challenge 3:
+
+const calcAverageHumanAge = function (array1) {
+  return array1
+    .map((dogAge) => (dogAge <= 2 ? dogAge * 2 : 16 + dogAge * 4))
+    .filter((edad) => edad >= 18)
+    .reduce(function (acc, act, i, aux) {
+      return acc + act / aux.length;
+    }, 0);
+};
+
+console.log(calcAverageHumanAge(dogsJulia));
