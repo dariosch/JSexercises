@@ -35,11 +35,11 @@ const renderInfo = function (country) {
       return response.json();
     })
     .then((data) => console.log(data))
-    .catch((err) => console.log(err));
+    .catch((err) => console.error(err));
 };
 
 whereAmI(52.508, 13.381);
-//whereAmI(19.037, 72.873);
-//whereAmI(-33.933, 18.474);
+whereAmI(19.037, 72.873);
+whereAmI(-33.933, 18.474);
 
 //https://api.countrylayer.com/v2/name/{country}?access_key=8090f6036c7e3d37c5582bb348bd6bf3
