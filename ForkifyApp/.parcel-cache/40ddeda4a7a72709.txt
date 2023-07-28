@@ -1,4 +1,4 @@
-6149
+6150
 81C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\.bin\download-lmdb-prebuilds.ps1133346894671498589 0
 73C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\abortcontroller-polyfill133346894567240704 1
 69C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\json5\lib\unicode.js133346894562433456 0
@@ -18,7 +18,7 @@
 79C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\postcss-value-parser\README.md133346894559295250 0
 72C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\csso\lib\replace\atrule133346894614972955 1
 80C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\caniuse-lite\data\regions\RU.js133346894656667083 0
-40C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist133348945992004488 1
+40C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist133349860699399598 1
 76C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\type-fest\source\basic.d.ts133346894557596225 0
 72C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\lines-and-columns\build133346894548981160 1
 65C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\base-x\README.md133346894555057679 0
@@ -381,7 +381,7 @@
 90C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\utils\test\input\config\config.js133346894595704402 0
 89C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\csso\cjs\replace\property\background.cjs133346894562313521 0
 75C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\source-map\source-map.d.ts133346894565171883 0
-62C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\index.850bd9e5.js.map133348945991984557 0
+62C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\index.850bd9e5.js.map133349860699389592 0
 63C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\ordered-binary133346894563602791 1
 108C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\walker133346894620129997 1
 114C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\restructure\utils.js133346894613813612 0
@@ -1808,7 +1808,7 @@
 80C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\ordered-binary\rollup.config.js133346894551569679 0
 79C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\csso\node_modules\mdn-data\css133346894603439971 1
 85C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\ordered-binary\assets\powers-dre.png133346894562763276 0
-58C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\logo.b82d6c7c.png133348944878074539 0
+58C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\logo.b82d6c7c.png133349857985063376 0
 117C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\ordered-binary\.nyc_output\5b6bd808-0399-4ee6-9395-344688761dfa.json133346894557056530 0
 85C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\node-addon-api\napi-inl.deprecated.h133346894554777840 0
 81C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\_\_array_with_holes133346894640136549 1
@@ -2625,7 +2625,7 @@
 66C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\has-flag\index.js133346894539716463 0
 69C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\globals\globals.json133346894550080535 0
 94C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\caniuse-lite\data\features\urlsearchparams.js133346894659815282 0
-58C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\index.850bd9e5.js133348945991894559 0
+58C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\index.850bd9e5.js133349860699309633 0
 65C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\globals\index.js133346894544553709 0
 88C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\css-tree\cjs\syntax\node\Combinator.cjs133346894567900353 0
 64C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\globals\license133346894540665927 0
@@ -2929,7 +2929,7 @@
 76C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\css-tree\lib\lexer\units.js133346894639626844 0
 83C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\caniuse-lite\data\features\ping.js133346894655347844 0
 85C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\css-tree\cjs\lexer\generic-const.cjs133346894603340025 0
-63C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\index.8d8029cf.css.map133348944878814122 0
+63C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\index.8d8029cf.css.map133349857985303243 0
 130C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\restructure\2-initialMergeRuleset.js133346894586749529 0
 94C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\csso\node_modules\css-tree\lib\utils\ident.js133346894634231919 0
 82C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\core\src\applyRuntimes.js133346894601990801 0
@@ -3294,6 +3294,7 @@
 65C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\css-what\LICENSE133346894530831561 0
 100C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\cjs\_class_apply_descriptor_update.cjs133346894568450020 0
 70C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\css-what\package.json133346894559784977 0
+62C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\views\paginationView.js133349860698210338 0
 67C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\css-what\readme.md133346894568390050 0
 75C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\css-what\lib\es\index.d.ts133346894571108488 0
 75C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\css-what\lib\es\types.d.ts133346894578274383 0
@@ -4622,7 +4623,7 @@
 90C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\_\_object_without_properties133346894644983779 1
 90C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\_\_skip_first_generator_next133346894645273609 1
 80C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\_\_sliced_to_array133346894645383558 1
-51C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\index.html133348942606697874 0
+51C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\index.html133349857985133331 0
 73C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\_\_to_array133346894645733363 1
 77C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\_\_to_primitive133346894645913238 1
 103C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\lexer133346894628495208 1
@@ -4790,7 +4791,7 @@
 81C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\esm\_await_value.js133346894621829029 0
 110C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\package-manager\test\validateModuleSpecifiers.test.js133346894606598170 0
 96C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\esm\_class_apply_descriptor_get.js133346894622728508 0
-59C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\icons.c78699a6.svg133348944878764160 0
+59C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\icons.c78699a6.svg133349857985123335 0
 96C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\esm\_class_apply_descriptor_set.js133346894623038332 0
 90C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\esm\_class_name_tdz_error.js133346894624897262 0
 93C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@swc\helpers\esm\_class_private_field_set.js133346894626546322 0
@@ -5856,7 +5857,7 @@
 76C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\events\src\index.js133346894591566775 0
 77C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\events\lib\errors.js133346894589318062 0
 76C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\events\lib\index.js133346894590837190 0
-59C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\index.8d8029cf.css133348944878764160 0
+59C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\index.8d8029cf.css133349857985133331 0
 76C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\events\lib\types.js133346894592336339 0
 75C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\diagnostic\LICENSE133346894587229303 0
 80C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\@parcel\diagnostic\package.json133346894592256375 0
@@ -6136,15 +6137,15 @@
 80C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\.bin\update-browserslist-db.ps1133346894671538565 0
 58C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\.bin\uuid133346900875517434 0
 62C:\Xampp1\htdocs\JSudemy\ForkifyApp\node_modules\.bin\uuid.cmd133346900875517434 0
-48C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\config.js133347995292269416 0
-52C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\controller.js133348944875675970 0
+48C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\config.js133349432708649848 0
+52C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\controller.js133349858304386931 0
 49C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\helpers.js133348945456330874 0
-47C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\model.js133348945989669361 0
-44C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\views133348899437736649 1
-59C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\views\resultsView.js133348926568783770 0
+47C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\model.js133349726631898434 0
+44C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\views133349853435309356 1
+59C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\views\resultsView.js133349694319518143 0
 52C:\Xampp1\htdocs\JSudemy\ForkifyApp\js\views\View.js133348931264956453 0
 49C:\Xampp1\htdocs\JSudemy\ForkifyApp\img\icons.svg133346890579305064 0
-61C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\favicon.c1b29cd4.png133348944878064553 0
+61C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\favicon.c1b29cd4.png133349857985003417 0
 63C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\ForkifyApp.3464ddca.js133346923588554401 0
-59C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\icons.a23457cd.svg133348944878764160 0
+59C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\icons.a23457cd.svg133349857985133331 0
 58C:\Xampp1\htdocs\JSudemy\ForkifyApp\dist\index.ede04314.js133346923588554401 0
