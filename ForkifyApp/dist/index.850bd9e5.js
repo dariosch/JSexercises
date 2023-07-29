@@ -617,9 +617,14 @@ const controlSearchResults = async function() {
     }
 };
 controlSearchResults();
+const controlPagination = function(goToPage) {
+    (0, _resultsViewJsDefault.default).render(_modelJs.getSearchResultsPage(goToPage));
+    (0, _paginationViewJsDefault.default).render(_modelJs.state.search);
+};
 const init = function() {
     (0, _recipeViewJsDefault.default).addHandlerRender(controlRecipes);
     (0, _searchViewJsDefault.default).addHandlerSearch(controlSearchResults);
+    (0, _paginationViewJsDefault.default).addHandlerClick(controlPagination);
 };
 init();
 
@@ -1591,44 +1596,52 @@ var _iconsSvg = require("url:../../img/icons.svg");
 var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
 class PaginationView extends (0, _viewJsDefault.default) {
     _parentElement = document.querySelector(".pagination");
+    addHandlerClick(handler) {
+        this._parentElement.addEventListener("click", function(e) {
+            const btn = e.target.closest(".btn--inline");
+            if (!btn) return;
+            const goToPage = +btn.dataset.goTo;
+            handler(goToPage);
+        });
+    }
     _generateMarkup() {
         const curPage = this._data.page;
         const numPages = Math.ceil(this._data.results.length / this._data.resultsPerPage);
         // escenario de pagina 1 y hay otras paginas
         if (curPage === 1 && numPages > 1) return `
-            <button class="btn--inline pagination__btn--next">
-                <span>Page ${curPage + 1}</span>
-                <svg class="search__icon">
-                    <use href="${0, _iconsSvgDefault.default}#icon-arrow-right"></use>
-                </svg>
-            </button>
+            ${this._generateMarkupButtonNext(curPage + 1)}
       `;
         // escenario de ultima pagina
         if (curPage === numPages) return `
-            <button class="btn--inline pagination__btn--prev">
-                <svg class="search__icon">
-                    <use href="${0, _iconsSvgDefault.default}#icon-arrow-left"></use>
-                </svg>
-                <span>Page ${curPage - 1}</span>
-            </button>
+            ${this._generateMarkupButtonPrev(curPage - 1)}
       `;
         // other page
         if (curPage < numPages) return `
-        <button class="btn--inline pagination__btn--prev">
-            <svg class="search__icon">
-                <use href="${0, _iconsSvgDefault.default}#icon-arrow-left"></use>
-            </svg>
-            <span>Page ${curPage - 1}</span>
-        </button>
-        <button class="btn--inline pagination__btn--next">
-                <span>Page ${curPage + 1}</span>
-                <svg class="search__icon">
-                    <use href="${0, _iconsSvgDefault.default}#icon-arrow-right"></use>
-                </svg>
-        </button>
+        ${this._generateMarkupButtonPrev(curPage - 1)}
+        ${this._generateMarkupButtonNext(curPage + 1)}
   `;
         //escenario de pagina 1 y no hay mas pags
         return "";
+    }
+    _generateMarkupButtonPrev(pageN) {
+        return `
+        <button data-go-to="${pageN}" class="btn--inline pagination__btn--prev">
+            <svg class="search__icon">
+                <use href="${0, _iconsSvgDefault.default}#icon-arrow-left"></use>
+            </svg>
+            <span>Page ${pageN}</span>
+        </button>
+    `;
+    }
+    _generateMarkupButtonNext(pageN) {
+        return `
+            <button data-go-to="${pageN}" class="btn--inline pagination__btn--next">
+                <span>Page ${pageN}</span>
+                <svg class="search__icon">
+                    <use href="${0, _iconsSvgDefault.default}#icon-arrow-right"></use>
+                </svg>
+            </button>
+      `;
     }
 }
 exports.default = new PaginationView();
