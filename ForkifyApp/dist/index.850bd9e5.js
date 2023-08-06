@@ -592,6 +592,8 @@ const controlRecipes = async function() {
         const id = window.location.hash.slice(1);
         if (!id) return;
         (0, _recipeViewJsDefault.default).renderSpinner();
+        //0. Actualizar resultados para que marque la actual
+        (0, _resultsViewJsDefault.default).update(_modelJs.getSearchResultsPage());
         //1. load recipe
         await _modelJs.loadRecipe(id);
         //2. Rendering Recipe
@@ -626,7 +628,8 @@ const controlServings = function(newServings) {
     _modelJs.updateServices(newServings);
     //console.log(newServings);
     //updating the recipe view (draws everything again)
-    (0, _recipeViewJsDefault.default).render(_modelJs.state.recipe);
+    //recipeView.render(model.state.recipe);
+    (0, _recipeViewJsDefault.default).update(_modelJs.state.recipe);
 };
 const init = function() {
     (0, _recipeViewJsDefault.default).addHandlerRender(controlRecipes);
@@ -1553,6 +1556,26 @@ class View {
         this._clear();
         this._parentElement.insertAdjacentHTML("afterbegin", markup);
     }
+    update(data) {
+        //if (!data || (Array.isArray(data) && data.length === 0)) {
+        //  return this.renderError();
+        //}
+        this._data = data;
+        const newMarkup = this._generateMarkup();
+        //lets use a method to convert a string into a DOM object
+        const newDOM = document.createRange().createContextualFragment(newMarkup);
+        const newElements = Array.from(newDOM.querySelectorAll("*"));
+        const curElements = Array.from(this._parentElement.querySelectorAll("*"));
+        newElements.forEach((newEl, i)=>{
+            const curEl = curElements[i];
+            //if new element has same content and the first child (the one who may have the text, except it is null) means that its a text element and not anyone else, so we need to modify them
+            if (!newEl.isEqualNode(curEl) && newEl.firstChild?.nodeValue.trim() !== "") curEl.textContent = newEl.textContent;
+            //now we need to do the same but for html attributes
+            if (!newEl.isEqualNode(curEl)) Array.from(newEl.attributes).forEach((attr)=>{
+                curEl.setAttribute(attr.name, attr.value);
+            });
+        });
+    }
 }
 exports.default = View;
 
@@ -1593,9 +1616,10 @@ class ResultsView extends (0, _viewJsDefault.default) {
         return this._data.map(this._generateMarkupPreview).join("");
     }
     _generateMarkupPreview(result) {
+        const id = window.location.hash.slice(1);
         return `
         <li class="preview">
-            <a class="preview__link" href="#${result.id}">
+            <a class="preview__link ${result.id === id ? "preview__link-active" : ""}" href="#${result.id}">
             <figure class="preview__fig">
                 <img src="${result.image}" alt="${result.title}" />
             </figure>
