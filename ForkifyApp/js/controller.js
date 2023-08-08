@@ -13,7 +13,11 @@ import addRecipeView from "./views/addRecipeView.js";
 if (module.hot) {
   module.hot.accept;
 }
-
+/**
+ *
+ * @returns
+ *
+ */
 const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
@@ -77,8 +81,18 @@ const controlBookmarks = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 
-const controlAddRecipe = function () {
-  console.log(newRecipe);
+const controlAddRecipe = async function (newRecipe) {
+  try {
+    await model.uploadRecipe(newRecipe);
+
+    //recipeView.render(model.state.recipe);
+    //setTimeout(function(){
+    // addRecipeView.toggleWindow();
+    //}, 2500);
+  } catch (err) {
+    console.error(err);
+    addRecipeView.renderError(err.message);
+  }
 
   //upload recipe data
 };
